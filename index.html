@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Week 6 Counter Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="importmap">
+      { "imports": { "lit": "https://cdn.jsdelivr.net/npm/lit@3/+esm" } }
+    </script>
+    <script type="module" src="./src/counter-app.js"></script>
+    <script type="module" src="./src/my-card.js"></script>
+    <style>
+      body { background:#f3f4f8; min-height:100vh; font-family:system-ui,Arial,sans-serif;
+             display:flex; flex-direction:column; align-items:center; padding:32px 0; gap:24px; }
+      .container { display:flex; gap:36px; margin-top:24px; }
+    </style>
+  </head>
+  <body>
+    <h1>Counter Demo / DDD</h1>
+    <div class="container">
+      <counter-app></counter-app>
+      <counter-app counter="16" min="10" max="25"></counter-app>
+    </div>
+    <h2>Optional Meme Card</h2>
+    <my-card></my-card>
+  </body>
+</html>
